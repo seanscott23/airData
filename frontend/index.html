@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Temperature Data</title>
+
+    <script src="https://d3js.org/d3.v6.min.js" defer></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://d3js.org/d3-geo.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v3.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <button class="modal-open">Instructions</button>
+    <div id="modal">
+      <div class="title">Temperature Changes</div>
+      <section class="modal-content">
+        Examine temperature changes for a multitude of countries! Simply select
+        the countries of your choice by clicking on them and then move the range
+        to the year of your choice. To deselect a country from your selection,
+        hold the command key and then click on the country you want to deselect.
+        Click to begin!
+      </section>
+      <button class="modal-close">Begin!</button>
+    </div>
+    <div class="rangeInput">
+      1850<input type="range" id="Range" min="1850" max="2013" />2013
+    </div>
+    <div id="textInput"></div>
+    <script src="./main.js"></script>
+
+    <div class="tempScale">
+      Temperature Gradient (celsius):
+      <br />
+      <div class="tempbox temp1">&lt 5 degrees:</div>
+
+      <br />
+      <div class="tempbox temp2">5 - 6 degrees:</div>
+
+      <br />
+      <div class="tempbox temp3">6 - 7 degrees:</div>
+
+      <br />
+      <div class="tempbox temp4">7 - 8 degrees:</div>
+
+      <br />
+      <div class="tempbox temp5">8 - 9 degrees:</div>
+
+      <br />
+      <div class="tempbox temp6">9 - 10 degrees:</div>
+
+      <br />
+      <div class="tempbox temp7">10 - 11 degrees:</div>
+
+      <br />
+      <div class="tempbox temp8">11 - 12 degrees:</div>
+
+      <br />
+      <div class="tempbox temp9">12 - 13 degrees:</div>
+
+      <br />
+      <div class="tempbox temp10">&gt 13 degrees:</div>
+    </div>
+    <div class="colorScale">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box5"></div>
+      <div class="box box6"></div>
+      <div class="box box7"></div>
+      <div class="box box8"></div>
+      <div class="box box9"></div>
+      <div class="box box10"></div>
+    </div>
+  </body>
+</html>

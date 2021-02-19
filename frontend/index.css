@@ -1,0 +1,205 @@
+.country {
+  fill: #ccc;
+  stroke: #333333;
+  stroke-width: 0.5;
+}
+
+svg {
+  display: flex;
+  margin: auto;
+}
+
+.selected {
+  stroke-width: 3;
+  stroke: 2px solid green;
+}
+
+.CSVcountry {
+  fill: blue;
+}
+
+input {
+  display: block;
+}
+
+#Range {
+  min-width: 300px;
+}
+
+.rangeInput {
+  display: flex;
+  justify-content: center;
+}
+
+#textInput {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.tempScale {
+  position: absolute;
+}
+
+.colorScale {
+  position: absolute;
+  display: inline-block;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.tempbox {
+  display: block;
+}
+.box {
+  display: block;
+  width: 25px;
+  height: 35px;
+}
+
+.first {
+  fill: darkblue;
+}
+
+.second {
+  fill: blue;
+}
+
+.third {
+  fill: lightblue;
+}
+
+.fourth {
+  fill: lightcyan;
+}
+
+.fifth {
+  fill: yellow;
+}
+
+.sixth {
+  fill: orange;
+}
+
+.seventh {
+  fill: darkorange;
+}
+
+.eigth {
+  fill: lightcoral;
+}
+
+.ninth {
+  fill: red;
+}
+
+.tenth {
+  fill: darkred;
+}
+
+.box1 {
+  background-color: darkblue;
+}
+.box2 {
+  background-color: blue;
+}
+.box3 {
+  background-color: lightblue;
+}
+.box4 {
+  background-color: lightcyan;
+}
+.box5 {
+  background-color: yellow;
+}
+.box6 {
+  background-color: orange;
+}
+.box7 {
+  background-color: darkorange;
+}
+.box8 {
+  background-color: lightcoral;
+}
+.box9 {
+  background-color: red;
+}
+.box10 {
+  background-color: darkred;
+}
+
+/* /////---Modal Content----///// */
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.modal-open {
+  z-index: 3;
+  margin: auto;
+  display: flex;
+  background-color: rgba(6, 118, 146);
+  color: white;
+  height: 1.5em;
+  border: 2px solid black;
+  width: 11%;
+  font-size: 1.5em;
+  padding: 2px;
+  justify-content: center;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.screen {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0.5;
+  width: 100%;
+  right: 0;
+  background-color: black;
+}
+
+#modal {
+  position: absolute;
+  z-index: 3;
+  margin-left: auto;
+  left: 0;
+  border: 2px solid black;
+  border-radius: 5px;
+  right: 0;
+  top: 10%;
+  margin-right: auto;
+  height: 350px;
+  width: 300px;
+  background-color: rgba(6, 118, 146);
+}
+
+.title {
+  font-weight: bold;
+  padding: 2px;
+  text-align: center;
+}
+
+.modal-content {
+  line-height: 2;
+  padding: 10px;
+}
+
+.modal-close {
+  display: block;
+  margin: auto;
+}
