@@ -1,7 +1,5 @@
 const { fetchData } = require("../util/data");
 const topojson = require("topojson");
-const { color } = require("d3");
-const bodyParser = require("body-parser");
 
 document.addEventListener("DOMContentLoaded", () => {
   let countryArray = [];
